@@ -56,7 +56,6 @@
     - a particular style you want to apply to elements you selected with your selector
 
 - Box Model
-    - height/width
     - content : actually holds the child elements and any other content of the element
     - padding : is the space between border and content (if you apply background color, padding will also be affected by it) 
     - border : is the border (visible, graphical border) of the element

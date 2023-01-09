@@ -28,3 +28,11 @@
 - Tell me 3 different ways to include css in html
 
 - What is attribute in html?
+
+- difference between id and class attributes in html?
+
+- what is alt attribute in html?
+
+- what is DOM?
+
+- Describe box model and its 4 components
