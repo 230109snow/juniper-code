@@ -1,0 +1,15 @@
+.heading {
+    font-style: italic;
+}
+
+h1 {
+    color: orange;
+}
+
+h2 {
+    color: green;
+}
+
+#p-tag-example {
+    color: cadetblue;
+}
