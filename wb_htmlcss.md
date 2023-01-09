@@ -13,7 +13,7 @@
 
 - (T/F) Html is a programming language
 
--  What is CSS?
+- What is CSS?
 
 - What do we use HTML and CSS for?
 
@@ -27,3 +27,4 @@
 
 - Tell me 3 different ways to include css in html
 
+- What is attribute in html?
