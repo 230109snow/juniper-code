@@ -36,3 +36,5 @@
 - what is DOM?
 
 - Describe box model and its 4 components
+
+- what are some ways to ensure html page is accessible to as many users as we can?
