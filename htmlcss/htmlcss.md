@@ -64,6 +64,7 @@
 - Responsive Web Design
     - A design technique that makes sure your websites look good in different screen sizes
         - Whether your users are using iphone SE, galaxy S12, iphone 14, your 32" curved monitor, you want your website to look pretty and work well w/o the massive horizontal scrolls and tiny fonts
+
 - Mobile First Design technique
     - Designs the mobile layout First, and then expand outward to cater to desktop users
     - because, mobile usage is becoming more and more prevalent
