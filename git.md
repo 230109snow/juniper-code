@@ -1,4 +1,4 @@
-# git
+# Git (Version Control System)
 
 Git is a version control system, to be more precise, it's a distributed version control system, meaning everybody as their own copy of the repository
 
