@@ -79,6 +79,11 @@ function conditionalOperators() {
     //strict equals, will not type coerce, and will return true only when the data type and the value are equal
     if(true === true) {
 
+    } else if(true) {
+        
+    }
+    else {
+
     }
 
     if(!undefined) {

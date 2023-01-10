@@ -18,3 +18,14 @@ function modifyNum(number) {
     num += number;
     countElem.innerText = num;
 }
+
+function fizzbuzz() {
+    console.log(document.querySelector('#fizzbuzz-input').value);
+    //you'll want to look up
+    //javascript loops (either while, or for will work well here)
+    //conditionals (if, elseif, else) or switch statements
+    //modulo operator will also come handy here.
+}
+
+function calculator(value) {
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
@@ -17,10 +18,42 @@
             </li>
         </ul>
     </nav>
-    <div id="count">0</div>
-    <button onclick="modifyNum(1)">Increment</button>
-    <button onclick="modifyNum(-1)">Decrement</button>
-    <button onclick="reset()">Reset</button>
+    
+    <div class="container">
+        <h2>Counter</h2>
+        <div id="count">0</div>
+        <button onclick="modifyNum(1)">Increment</button>
+        <button onclick="modifyNum(-1)">Decrement</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+    <div class="container">
+        <h2>FizzBuzz</h2>
+        <input type="number" name="fizzbuzz-input" id="fizzbuzz-input">
+        <button onclick="fizzbuzz()">Fizzbuzz!</button>
+        <div id="fizzbuzz-output">
+            <!-- a placeholder div to print your output -->
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Calculator</h2>
+        <div id="expression">
+            <!-- This is where i'll  output the expression user is entering -->
+        </div>
+        <button>9</button>
+        <button>8</button>
+        <button>7</button>
+        <button>6</button>
+        <button>5</button>
+        <button>4</button>
+        <button>3</button>
+        <button>2</button>
+        <button>1</button>
+        <button>0</button>
+        <button>+</button>
+        <button>Submit</button>
+    </div>
     <script src="events.js"></script>
 </body>
 </html>
