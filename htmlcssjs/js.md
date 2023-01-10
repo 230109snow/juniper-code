@@ -30,7 +30,7 @@ ES2015 ES6
 
 ## Different keywords to declare variables
 - var : the old school way (don't use this)
-    - var's minimum scope is function scope
+    - var's maximum scope is function scope
 Introduced in ES6:
 - let : for storing any value that may change in the future
 - const : for storing values that you don't plan on changing
