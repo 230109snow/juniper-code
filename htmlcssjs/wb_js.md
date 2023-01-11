@@ -45,3 +45,4 @@ Create a hangman game, using HTML/CSS/JS
 - How do we create array in js?
 - how do we create js objects?
 - (T/F) javascript object is JSON
+- What is event propagation/bubbling?
