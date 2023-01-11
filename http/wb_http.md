@@ -1,4 +1,14 @@
 # Workbook: Http/Fetch API
+## Exercises
+Take your html/css/js project and create a new page that utilizes an external API. Your page should do the following
+- Receive user input via button, text input, etc.
+- Send an HTTP call to the external API of your choice using Fetch API
+- Parse the http response received and present the response to the page
+
+Optional:
+- form validation
+    - prevent users from submitting invalid data
+- respond to http errors
 
 ## Conceptual Questions
 - What is HTTP? What do we use it for?
