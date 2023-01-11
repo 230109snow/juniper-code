@@ -82,12 +82,13 @@ https://github.com/mdn/js-examples/tree/master/module-examples/basic-modules
 ## Inheritance
 ### Prototypal Inheritance
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+
 ### Classes and OOP in JS
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
-Few differences
+Few differences from OOP languages such as Java and C#
 - Must declare all properties in constructor
-- no access modifiers
-- you'll most likely want to call the base class' constructor using `super` keyword 
+- make fields private by starting fields with '#'
+- you'll most likely want to call the base class' constructor using `super` keyword if your class is a derived class
 
 ## This keyword in JS
 https://www.w3schools.com/js/js_this.asp
@@ -104,4 +105,4 @@ JS keeps a lexical environment (a phone book for all variable/function names) th
 - let: it is still being hoisted, but the program will prevent you from using the variable before initialization step.
     `let bar = 'foo';`
 
-- To prevent any additional headaches, declare and initialize your variables/functions before you use them.
+- TLDR; To prevent any additional headaches, declare and initialize your variables/functions before you use them.

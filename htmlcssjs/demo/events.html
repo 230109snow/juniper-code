@@ -27,12 +27,14 @@
         <button onclick="reset()">Reset</button>
     </div>
 
-    <div class="container">
+    <div class="container" onsubmit="alert('i also know about form submit')">
         <h2>FizzBuzz</h2>
-        <input type="number" name="fizzbuzz-input" id="fizzbuzz-input">
-        <button onclick="fizzbuzz()">Fizzbuzz!</button>
+        <form onsubmit="fizzbuzz(event); return false;" >
+            <input type="number" max="100" min="1" name="fizzbuzz-input" id="fizzbuzz-input">
+            <input type="submit" value="Fizzbuzz!">
+        </form>
+        <!-- a placeholder table to print your output -->
         <table id="fizzbuzz-output">
-            <!-- a placeholder div to print your output -->
             <thead>
                 <th>Number</th>
                 <th>Output</th>
@@ -52,6 +54,18 @@
                 </tr> -->
             </tbody>
         </table>
+    </div>
+
+    <div onclick="parentOfBtns(event)">
+        <button id="btn1" onclick="console.log('btn1')">
+            1
+        </button>
+        <button id="btn2" onclick="console.log('btn2')">
+            2
+        </button>
+        <button id="btn3" onclick="console.log('btn3')">
+            3
+        </button>
     </div>
 
     <div class="container">
