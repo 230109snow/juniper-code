@@ -22,7 +22,7 @@ Optional:
 - How about Body?
 - What are 4 common http request verbs/methods and in which situations do we commonly use those in?
 - What is REST?
-- (T/F) REST is a binding contract
+- (T/F) HTTP is a binding contract
 - What are 5 categories of http response status codes?
 - What does 200 response code mean?
 - What does 500 response code mean?
