@@ -27,14 +27,32 @@
     <img src="https://http.cat/200.jpg" width="200px" id="status-code-img" alt="">
 
     <div id="the-cat-api">
-        <label for="img-num">How Many Cats Do You Want?</label>
-        <input type="number" name="img-num" id="img-num">
-        <label for="breed">What Kind of cat do you want?</label>
-        <input type="text" name="breed" id="breed">
-        <button onclick="getCats()">Get me cats!</button>
+        <h3>The Cat API</h3>
+        <form action="" id="cat-api-form">
+            <label for="img-num">How Many Cats Do You Want?</label>
+            <select name="img-num" id="img-num">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+            </select>
+            <label for="breed">What Kind of cat do you want?</label>
+            <input type="text" name="breed" id="breed">
+            <button onclick="getCats(); return false;">Get me cats!</button>
+        </form>
     </div>
     <script src="fetch.js"></script>
 </body>
 
 </html>
-
