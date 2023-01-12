@@ -10,7 +10,7 @@ the client asks for(requests) resource from server, server responds to the reque
 ## HTTP Request
 Client requests to take a certain action to the resource in the server
 ### Start line
-    - Method Verb
+    - Method/Verb
         - GET : Requesting to retrieve resource from the server
         - PUT : Requesting to modify existing resource in the server
         - POST : Request to create a new resource in the server
@@ -21,6 +21,12 @@ Client requests to take a certain action to the resource in the server
     - Payload, especially for PUT and POST request
 ### Request Header
     - Information about the request itself
+### URL
+GET https://domain.tld/api/catpic/random?breed_ids=beng
+{
+    key: value,
+    key2: value
+}
 
 ## HTTP Response
 ### Status line
