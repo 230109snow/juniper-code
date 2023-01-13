@@ -19,7 +19,7 @@ Typescript figures out what a type of an object is by looking at its properties 
 ### Commands
 - tsc path-to-file
     - to transpile this to js
-- tsc -- init
+- tsc --init
     - to get yourself the config file
 
 ### Resources
@@ -32,12 +32,12 @@ Node Package Manager. We use NPM to manage our dependencies for js projects, as 
 In order to install packages from NPM, we use `npm install` or `npm i` command followed by the package name. For example `npm install typescript`.
 When we install packages, they go in the special folder named node_modules.
 You can use --global to install the package accessible everywhere in your machine, or you can use --save to save the package as your project dependency. --save-dev saves the package information as your dev dependency. 
-
+To initialize new npm package, use the command `npm init`, and it will take you through the each items that goes in package.json
 ## NPX
-node package runner. We use this to run the typescript compiler ('tsc') to 'transpile' the typescript file to a js file.
+node package runner. We use this to run the locally installed typescript compiler ('tsc') to 'transpile' the typescript file to a js file.
 
 ## TypeScript
-In order to run locally installed typescript, first install the package and then run `npx tsc` ("typescript compiler")
+In order to run locally installed typescript, first install the package and then run `npx tsc` ("typescript compiler") or `tsc`, if you have it globally installed
 
 Typescript is a superset of javascript, or as people like to say, if you make OOP developers code in javascript, they'll come up with typescript.
 

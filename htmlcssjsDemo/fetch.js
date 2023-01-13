@@ -1,11 +1,13 @@
 // Javascript offers two built in ways to send http requests
 //1. XML Http Request
 //2. Fetch API (we're going to use this)
-function fetchCats() {
-    const inputVal = document.getElementById('status-code').value;
 
-    document.getElementById('status-code-img').src = `https://http.cat/${inputVal}.jpg`
-}
+//importing named export
+import { fetchCatsFn } from "./fetchCats.js";
+
+//importing default export
+import anotherFn from "./fetchCats.js";
+
 
 let apiKey, apiKeyLoaded = false; 
 fetch('./apiKey.json').then((res) => res.json()).then((data) => {

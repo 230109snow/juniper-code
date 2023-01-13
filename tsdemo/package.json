@@ -1,0 +1,17 @@
+{
+  "name": "tsdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ts": "npx tsc --watch"
+  },
+  "author": "roaringsheep",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "jasmine": "^4.5.0"
+  }
+}
