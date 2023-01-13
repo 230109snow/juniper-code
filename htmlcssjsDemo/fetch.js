@@ -8,13 +8,17 @@ import { fetchCatsFn } from "./fetchCats.js";
 //importing default export
 import anotherFn from "./fetchCats.js";
 
+window.fetchCats = fetchCatsFn;
 
 let apiKey, apiKeyLoaded = false; 
 fetch('./apiKey.json').then((res) => res.json()).then((data) => {
     apiKey = data.TheCatAPI
     apiKeyLoaded = true;
 })
-
+document.getElementById('get-cats-btn').onclick = () => {
+    getCats();
+    return false;
+} 
 function getCats() {
     //This if block will ensure that the api key has been loaded before we send the http request
     if(apiKeyLoaded) {
