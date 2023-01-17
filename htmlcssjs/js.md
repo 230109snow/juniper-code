@@ -14,11 +14,11 @@ ES2015 ES6
 - Boolean
 - Object
 - Null
-- BigInt
 - Symbol
 
 - 'SUNBONS'
 
+- BigInt
 ## Comparison
 - == : type coerces
 - === : strict comparison (compares not only the values, but also the type)
