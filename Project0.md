@@ -1,4 +1,4 @@
-# Project 0
+# Project 0 - Due 1/26/22
 For Project 0, you will create an angular application that utilizes an external API
 
 ## Requirements
@@ -22,6 +22,7 @@ For Project 0, you will create an angular application that utilizes an external 
 ### Fun things to create in Angular
 - Games
 - Data Visualization
+- Kanban board
 
 ## Presentation
 P0 Presentation will happen on 1/26/23 in the morning (exact time TBD). The project should be in a working state, with the most current code pushed to the repository in github. Everyone will give a short presentation (~5 minutes) their project to the cohort and it will include the following:
@@ -37,10 +38,16 @@ Take this presentation more as a presentation to stakeholders rather than the on
 
 - Your application should be in a working state most of the time
     - Don't keep copy pasting code in hopes of working
+    - This would be a good time to utilize branching 
 
 - Remember the KISS principle
     - Don't over-engineer or overly complicate things. Have enough structure to complete what you need and some room for expansion but not too much more than that
     - This doesn't mean you should ditch all best practices and create one giant component for all your application.
+
+- Ideally, you should code freeze the day before the presentation
+    - This means no more edits to the code, no matter how minor it is. 
+        - Not even CSS rules
+            - Not even colors
 
 - Commit and push often
 
