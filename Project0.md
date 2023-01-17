@@ -6,6 +6,7 @@ For Project 0, you will create an angular application that utilizes an external 
 - Use at least 1 external API to source data
     - you should get this data in real time via http(s)
 - Should demonstrate ability to integrate that data into UI/UX
+
 - Utilize Angular to create a frontend application
 - Your app should have 3 or more components
 - Your app should demonstrate usage of directives
@@ -13,21 +14,23 @@ For Project 0, you will create an angular application that utilizes an external 
 - Your app should have some sort of user interaction element
 
 ### Not Requirements, just ideas
-- some sort of authentication/authorization with route guard
-    - hard coded admin login? using IDaaS such as OAuth or auth0?
 - granular components with nice flow of data between them
 - using Web Storage API to persist some data
+- some sort of authentication/authorization with route guard
+    - hard coded admin login? using IDaaS such as OAuth or auth0?
 - integrating with user's hardware (camera, mic, etc)
 
 ### Fun things to create in Angular
 - Games
-- Data Visualization
+- Data Visualization (D3.js, canvasjs)
 - Kanban board
+-
 
 ## Presentation
-P0 Presentation will happen on 1/26/23 in the morning (exact time TBD). The project should be in a working state, with the most current code pushed to the repository in github. Everyone will give a short presentation (~5 minutes) their project to the cohort and it will include the following:
+P0 Presentation will happen on 1/26/23 in the morning (exact time TBD). The project should be in a working state, with the most current code pushed to the repository in github. Everyone will give a short presentation (~5 minutes) of their project to the cohort and it will include the following:
 - The premise of the application (What does it do?)
-- Feature description and demo of the application
+- Feature description
+- demo of the application
 
 Take this presentation more as a presentation to stakeholders rather than the one to fellow developers. We want to see working features and what does that mean rather than deep dive into code.
 
