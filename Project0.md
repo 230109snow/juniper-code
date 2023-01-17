@@ -6,7 +6,6 @@ For Project 0, you will create an angular application that utilizes an external 
 - Use at least 1 external API to source data
     - you should get this data in real time via http(s)
 - Should demonstrate ability to integrate that data into UI/UX
-
 - Utilize Angular to create a frontend application
 - Your app should have 3 or more components
 - Your app should demonstrate usage of directives
@@ -15,8 +14,8 @@ For Project 0, you will create an angular application that utilizes an external 
 
 ### Not Requirements, just ideas
 - some sort of authentication/authorization with route guard
-    - hard coded admin login? using IDaaS?
-- granular components with nice flow of data
+    - hard coded admin login? using IDaaS such as OAuth or auth0?
+- granular components with nice flow of data between them
 - using Web Storage API to persist some data
 - integrating with user's hardware (camera, mic, etc)
 
@@ -25,7 +24,7 @@ For Project 0, you will create an angular application that utilizes an external 
 - Data Visualization
 
 ## Presentation
-P0 Presentation will happen on 1/26/23 in the morning (exact time TBD). The project should be in a working state, with the most current code pushed to the repository in github. Everyone will present their project to the cohort and it will include the following:
+P0 Presentation will happen on 1/26/23 in the morning (exact time TBD). The project should be in a working state, with the most current code pushed to the repository in github. Everyone will give a short presentation (~5 minutes) their project to the cohort and it will include the following:
 - The premise of the application (What does it do?)
 - Feature description and demo of the application
 
@@ -33,14 +32,22 @@ Take this presentation more as a presentation to stakeholders rather than the on
 
 ## Tips
 - KEEP THE SCOPE SMALL
-    - You only have 1.5 weeks to create an application that should be demo ready. Start with a teeny tiny scope that feels like you can finish it in half the time. And still consider shaving it down even further. You can always add more later.
+    - You only have 1.5 weeks to create an application that should be demo ready. Start with a teeny tiny scope that feels like you can finish it in third the time. And still consider shaving it down even further. You can always add more later.
     - Don't hesitate to come by me for a sanity check
+
+- Your application should be in a working state most of the time
+    - Don't keep copy pasting code in hopes of working
+
 - Remember the KISS principle
-    - Don't over-engineer or overly complicate things. Have enough structure to complete what you need and some more room for expansion but not too much more than that
-    - This doesn't mean you should ditch all best practices and create one giant component for all your application. 
+    - Don't over-engineer or overly complicate things. Have enough structure to complete what you need and some room for expansion but not too much more than that
+    - This doesn't mean you should ditch all best practices and create one giant component for all your application.
+
 - Commit and push often
+
 - Practice your demo and presentation ahead of time.
     - Especially demo. Down to the data you will use.
     - Please avoid demoing your bugs if at all possible.
+    - If bug happens in demo, don't panic, simply move on
+
 - Don't talk down your project during the presentation
     - We are here to see what you've accomplished, not how close to the total collapse it really is.
