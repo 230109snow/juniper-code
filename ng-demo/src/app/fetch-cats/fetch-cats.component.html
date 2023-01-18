@@ -1,6 +1,8 @@
 <!-- example of a template form and two way binding using the "banana box"  -->
+<!-- Property binding is being used here to set the validation for the input field -->
 <form #catform="ngForm" (submit)="getCats(catform)">
-    <input type="number" name="numCats" id="numCats" [(ngModel)]="numCats" #numcat="ngModel" [required]="true" [min]="1" [max]="25">
+    <input type="number" name="numCats" id="numCats" [(ngModel)]="numCats" #numcat="ngModel" [required]="validation.required" [min]="validation.min" [max]="validation.max">
+    <!-- Do not display error messages, unless the user have interacted with the input field -->
     <div *ngIf="numcat.invalid && (numcat.dirty && numcat.touched)"
         class="alert">
         <div *ngIf="numcat.errors?.['min']">
