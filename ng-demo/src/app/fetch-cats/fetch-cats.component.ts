@@ -1,6 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { apikey } from 'src/api-key';
-import { HttpClient } from '@angular/common/http'
+import { voteDTO } from 'src/models/voteDTO';
+import { CatApiService } from '../cat-api.service';
+
+
 @Component({
   selector: 'app-fetch-cats',
   templateUrl: './fetch-cats.component.html',
@@ -12,28 +15,36 @@ export class FetchCatsComponent implements OnInit, OnDestroy{
   // Instead of the component class itself instantiating the HttpClient class, we ask the framework to "inject" an instance (or a copy) of HttpClient
   // It's a design pattern for loose coupling
   // By setting httpClient private, we only allow this class to have access to it. If I were to set it public, the html page will also have access to that.
-  constructor(private http: HttpClient) {}
+  constructor(private catapi : CatApiService) {}
 
   numCats : number = 0;
   catpics : any[] = [];
   now : number | Date = Date.now();
-  getCats() : void {
-    // send an http call to fetch cats
-    const url = `https://api.thecatapi.com/v1/images/search?limit=${this.numCats}`
-
-    // assembling and sending the get request
-    this.http.get(url, {
-      headers: {
-        'x-api-key' : apikey
-      }
-    }).subscribe((data: any) => {
-      // httpClient returns an observable to handle asynchronous request
-      this.catpics = data;
-      // for(let index in data) {
-      //   this.catpics.push(data[index])
-      // }
-      // console.log(this.catpics);
+  validation = {
+    required: true,
+    min : 1,
+    max : 25
+  }
+  vote(args : voteDTO) : void {
+    this.catapi.vote(args).subscribe({
+      next: (res)=> {
+          // when the request is successful, handle it her
+          console.log(res)
+        },
+        error: (err) => {
+          //when the response returns 4/500 codes, handle it here
+          console.error(err)
+        }
     })
+  }
+  getCats(form : any) : void {
+    if(form.valid) {
+      // assembling and sending the get request
+      this.catapi.getCats(this.numCats).subscribe((data: any) => {
+        // httpClient returns an observable to handle asynchronous request
+        this.catpics = data;
+      })
+    }
   }
   
 
@@ -44,7 +55,6 @@ export class FetchCatsComponent implements OnInit, OnDestroy{
   ngOnInit(): void {
     console.log(apikey);
   }
-
 
   // Runs on unmount
   // Great place to do any clean ups

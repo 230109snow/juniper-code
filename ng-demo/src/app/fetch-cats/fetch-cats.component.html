@@ -1,6 +1,17 @@
 <!-- example of a template form and two way binding using the "banana box"  -->
-<input type="number" [(ngModel)]="numCats">
-<button (click)="getCats()">Get Cats</button>
+<form #catform="ngForm" (submit)="getCats(catform)">
+    <input type="number" name="numCats" id="numCats" [(ngModel)]="numCats" #numcat="ngModel" [required]="true" [min]="1" [max]="25">
+    <div *ngIf="numcat.invalid && (numcat.dirty && numcat.touched)"
+        class="alert">
+        <div *ngIf="numcat.errors?.['min']">
+            the min value is 1.
+        </div>
+        <div *ngIf="numcat.errors?.['max']">
+            the max value is 25.
+        </div>
+    </div>
+    <input type="submit" value="get cats">
+</form>
 <!-- Examples of pipes being used with string interpolation, used to format how you display your data -->
 <!-- {{catpics | json}}
 {{now | date: 'long'}} -->
@@ -8,4 +19,6 @@
 <div *ngFor="let pic of catpics">
     <!-- [src] is an example of property binding -->
     <img [src]="pic.url" width=200 alt="">
+    <button (click)="vote({id: pic.id, amount: 1})">^</button>
+    <button (click)="vote({id: pic.id, amount: -1})">v</button>
 </div>
