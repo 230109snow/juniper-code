@@ -4,18 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TwoModule } from './two/two.module';
-import { TestComponent } from './three/test/test.component';
+import { FetchCatsComponent } from './fetch-cats/fetch-cats.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 // Module Decorator
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    FetchCatsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TwoModule
+    TwoModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,11 +2,16 @@ import { Component } from '@angular/core';
 
 // Decorator
 @Component({
-  selector: 'app-test',
+  selector: 'two-test',
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.css']
 })
-// template: '<button class="btncls">Test Component Button</button>',
-export class TestComponent {
 
+export class TestComponent {
+  data : number[] = [1, 2, 3, 4, 5]
+  show : boolean = true;
+
+  toggleClick() : void {
+    this.show = !this.show;
+  }
 }

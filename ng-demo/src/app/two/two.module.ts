@@ -13,7 +13,6 @@ import { TestComponent } from './test/test.component';
     CommonModule
   ],
   exports: [
-    FooComponent,
     TestComponent
   ]
 })
