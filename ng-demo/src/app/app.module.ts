@@ -7,12 +7,17 @@ import { TwoModule } from './two/two.module';
 import { FetchCatsComponent } from './fetch-cats/fetch-cats.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
+import { EventsComponent } from './events/events.component';
+import { CatApiService } from './cat-api.service';
 
 // Module Decorator
 @NgModule({
   declarations: [
     AppComponent,
     FetchCatsComponent,
+    NavbarComponent,
+    EventsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,70 @@
+Weather App
+User Stories
+
+- Users should be able to get location specific weather data
+- users should be able to get temperature, humidity, precipitation, wind speed, etc, data
+- Users should be able to adjust how far of the forecast they want (from 1 day to 10days, etc?)
+- Users can allow the application to automatically detect their location
+- Users should be able to change the background based on timezone
+- Users should be able to change the background based on weather
+- Users should be able to enter either zipcode or lat/lng for weather
+- Users should be able to view different icons/images for different weather
+
+
+What are our MVP (minimum viable product) features?
+- What is the minimum set of features for this to be able to be called a weather app?
+- Get weather data based on location
+	- Doesen't have to fancy, we can literally ask users to input their lat/lng to get us started
+	- Some api's don't support zipcode/address based weather data, then it means, allowing users to use zip code is not a trival feature because we have to find another API that can translate the zipcode/address into lat/lngs
+
+- Data should include temperature, humidity, precipication
+	- This is making sure we know how to use the data we are getting from API
+
+- We should be able to display the data to the user
+	- This doesn't have to be very fancy
+	- This can literally be some div's and some p's
+
+Once you achieve MVP, it's time to refactor, iterate over and implement additional features/polish existing features as needed afterwards
+
+Piano App
+
+- Users should be able to interact with the virtual keyboard, and hear sound based on which key they press
+- Users should be able to get visual feedback based on which key they press
+- Users should be able to see the sheetmusic
+- Users should be able to adjust the volume
+- Users should be able to save their favorite sheet music
+- Users should be able to record themselves
+- Users should be able to use the metronome
+- Users should be able to search for sheetmusic
+- Users should be able to change the output sound to something other than piano, such as flute, string, synth, etc.
+- Users should be able to transpose key on the keyboard
+- Users should be able to upload a midi file and have the app play for it
+- Users should be able to upload sheetmusic of their choice
+- Users should be able to get recommendations for sheetmusic
+
+MVP
+- We have to have a way for users to press keys (whethere it be mouse input or keyboard input)
+- The app should be able to play the sound according to different keys being pressed (how long to play the tone?)
+- Users should be able to se sheetmusic on screen
+
+
+Recipe App
+
+- Users should be able to see different options/ based on cuisine
+- Users should be able to search by types of food and find recipes related
+- Users should be able to filter by different dietary restriction
+- Users should be able to see the image of the finishd product
+- Serving size
+- Users should be able to see the recipe/step-by-step instruction
+- Users should be able to get recipes based on ingredients
+- Users should be able to get macro nutrient info
+- Users should be able to set their food preference 
+- Users should be able to save their recipes
+- *Users should be able to see what might happen if they substitute
+- Users should be able to see how much the dish may cost (based off of ingredient)
+- Users should be able to upload their own recipes
+
+MVP
+- Users should be able to see the recipe
+	- the app should display an ordered list of instructions on how to actually make a recipe, and the ingredients required
+- Users should be able to choose the recipe

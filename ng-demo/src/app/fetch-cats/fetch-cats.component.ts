@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { apikey } from 'src/api-key';
 import { voteDTO } from 'src/models/voteDTO';
 import { CatApiService } from '../cat-api.service';
@@ -15,7 +16,7 @@ export class FetchCatsComponent implements OnInit, OnDestroy{
   // Instead of the component class itself instantiating the HttpClient class, we ask the framework to "inject" an instance (or a copy) of HttpClient
   // It's a design pattern for loose coupling
   // By setting httpClient private, we only allow this class to have access to it. If I were to set it public, the html page will also have access to that.
-  constructor(private catapi : CatApiService) {}
+  constructor(private catapi : CatApiService, private router: Router) {}
 
   numCats : number = 0;
   catpics : any[] = [];
@@ -46,14 +47,16 @@ export class FetchCatsComponent implements OnInit, OnDestroy{
       })
     }
   }
-  
+  backToHome() : void {
+    this.router.navigate(['']);
+  }
 
 
   // One of lifecycle hooks
   // When this component mounts/renders for the first time, run whatever code is in here
   // Great place to run any setup code you may have for this component
   ngOnInit(): void {
-    console.log(apikey);
+    console.log(this.catapi.foo)
   }
 
   // Runs on unmount

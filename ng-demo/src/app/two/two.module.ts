@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooComponent } from './foo/foo.component';
 import { TestComponent } from './test/test.component';
+import { CatApiService } from '../cat-api.service';
 
 
 @NgModule({
@@ -11,6 +12,9 @@ import { TestComponent } from './test/test.component';
   ],
   imports: [
     CommonModule
+  ],
+  providers: [
+    CatApiService
   ],
   exports: [
     TestComponent

@@ -1,0 +1,14 @@
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 10pt;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    color: blue;
+}

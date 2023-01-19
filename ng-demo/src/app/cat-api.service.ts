@@ -8,12 +8,16 @@ interface CatObj {
   id : string;
   url : string;
 }
+
 @Injectable({
   providedIn: 'root'
 })
 export class CatApiService {
 
   constructor(private http: HttpClient) { }
+
+  foo : string = 'bar';
+
   vote(args : voteDTO) : Observable<CatObj> {
     // object destructuring
     const {id, amount} = args;
