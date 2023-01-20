@@ -9,8 +9,7 @@ Planning -> Analysis -> Design -> Development/Implementation -> Verification/Tes
 This particular model comes from factory/production line where they produce physical goods and going back/starting over costed a lot of money. The stages (Planning, Design, Implementation, Testing/Verification, Pushing) are done once, and is expected to be as good as they can be. So these are handy for things that have to be super exact (military mission, apollo launches)
 But it also came with some drawbacks such as 
     - can't go back and fix so stakes for each stages are high
-    - Lack of iteration means that there will be very little change to learn from the testing and reflect the result on the current product
-    - Lack of innovation (?)
+    - Lack of iteration means that there will be very little change to reflect what we learned from the testing
     - It's inefficient since we aren't always sure what we want exactly.
 
 ### Differences between Physical goods and software
@@ -36,8 +35,9 @@ In a sprint, we plan the work that seems achievable in upcoming sprint (2-3 week
     - "How much work seems doable in next 2-3 weeks?"
     - "Which feature/bug takes the most priority?"
     - "Any carryover from the last sprint we need to take account of?"
+    - The tasks/items are usually expressed in user stories, and the team will assign story points (usually fib number) to signify the weight of the item (aka how much time/resource is going to take to complete that item)
 
-- Daily Standup/Scrum Meeting: During the sprint
+- Daily Standup/Scrum Meeting: During the implementation phase of sprint
     - This is an opportunity to catch up to what everyone else is doing in your team.
     - This isn't a long meeting- supposed to be done in 10 ~ 15 min max standing up the first thing in the morning
     - 3 Questions that gets asked here
