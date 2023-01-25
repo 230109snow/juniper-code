@@ -43,4 +43,9 @@ export class CatApiService {
       }
     });
   }
+
+  getMusic() : Observable<any> {
+    const url = "https://sheetmusicapi20230125131139.azurewebsites.net/api/sheetmusic";
+    return this.http.get(url);
+  }
 }

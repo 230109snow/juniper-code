@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { CatApiService } from '../cat-api.service';
 
@@ -8,8 +9,8 @@ import { CatApiService } from '../cat-api.service';
   styleUrls: ['./events.component.css']
 })
 export class EventsComponent implements OnInit{
-  constructor(private currentRoute: ActivatedRoute, private service: CatApiService) {}
-
+  constructor(private currentRoute: ActivatedRoute, private service: CatApiService, private sanitizer: DomSanitizer) {}
+  music : any;
   ngOnInit(): void {
     this.service.foo = 'we visited events'
     console.log(this.service.foo);
@@ -21,6 +22,11 @@ export class EventsComponent implements OnInit{
     })
     this.currentRoute.queryParams.subscribe((queryParams) => {
       console.log(queryParams)
+    })
+
+    this.service.getMusic().subscribe((data) => {
+      this.music = this.sanitizer.bypassSecurityTrustResourceUrl(data.musicUrl);
+      console.log(this.music);
     })
   }
 }

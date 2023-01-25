@@ -9,7 +9,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EventsComponent } from './events/events.component';
-import { CatApiService } from './cat-api.service';
+import { CardsComponent } from './cards/cards.component';
+import { CardDetailComponent } from './card-detail/card-detail.component';
+import { SafePipeModule } from 'safe-pipe';
 
 // Module Decorator
 @NgModule({
@@ -18,6 +20,8 @@ import { CatApiService } from './cat-api.service';
     FetchCatsComponent,
     NavbarComponent,
     EventsComponent,
+    CardsComponent,
+    CardDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,8 @@ import { CatApiService } from './cat-api.service';
     TwoModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SafePipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

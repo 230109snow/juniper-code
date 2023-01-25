@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FetchCatsComponent } from './fetch-cats/fetch-cats.component';
 import { TestComponent } from './two/test/test.component';
 import { EventsComponent } from './events/events.component';
+import { CardsComponent } from './cards/cards.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'events/:mode',
     component: EventsComponent
+  },
+  {
+    path: 'cards',
+    component: CardsComponent
   },
   {
     path: '',
